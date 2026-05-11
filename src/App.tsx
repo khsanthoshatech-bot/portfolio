@@ -300,7 +300,7 @@ export default function App() {
                 <span className="text-[10px] font-black uppercase tracking-[0.16em] sm:tracking-[0.2em] text-slate-300">Available for Opportunities</span>
               </div>
               <div className="hidden sm:block h-px w-12 bg-white/10" />
-              <span className="text-[10px] font-mono text-cyan-500 font-bold tracking-widest uppercase break-words">Location: Bangalore, IN</span>
+              <span className="text-[10px] font-mono text-cyan-500 font-bold tracking-widest uppercase break-words">Location: Bangalore, INDIA</span>
             </motion.div>
             
             <h1 className="text-4xl sm:text-5xl md:text-7xl lg:text-[9rem] font-black tracking-tight leading-[1] md:leading-[0.9] text-white grow mb-8 md:mb-12 break-words">

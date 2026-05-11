@@ -90,7 +90,7 @@ const experiences = [
   {
     role: "Data Science Intern",
     company: "Orvionar Tech Pvt Limited",
-    period: "JAN 2024 - PRESENT",
+    period: "DEC 2025 - APR 2026",
     description: "Architecting predictive models and automated data extraction pipelines to solve complex business bottlenecks.",
     details: [
       "Process Automation: Reduced data pipeline latency by 45%.",
@@ -101,7 +101,7 @@ const experiences = [
   {
     role: "Automation Developer",
     company: "Freelance",
-    period: "2023 - 2024",
+    period: "2025 - Present",
     description: "Developing robust web-crawling ecosystems and custom script solutions for international clients.",
     details: [
       "Architecture: Built scalable Selenium-based cloud scrapers.",

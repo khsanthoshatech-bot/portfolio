@@ -36,53 +36,108 @@ import { motion, AnimatePresence } from "motion/react";
 // --- Data Structures ---
 
 const skills = [
-  { name: "Python", icon: <Terminal className="w-5 h-5" />, category: "Core", level: 95 },
-  { name: "SQL", icon: <Database className="w-5 h-5" />, category: "Database", level: 85 },
-  { name: "Pandas", icon: <Layers className="w-5 h-5" />, category: "Data Science", level: 90 },
-  { name: "NumPy", icon: <Cpu className="w-5 h-5" />, category: "Data Science", level: 88 },
-  { name: "Selenium", icon: <Globe className="w-5 h-5" />, category: "Automation", level: 92 },
-  { name: "React", icon: <Code2 className="w-5 h-5" />, category: "Frontend", level: 80 },
-  { name: "Tailwind CSS", icon: <MonitorSmartphone className="w-5 h-5" />, category: "Frontend", level: 85 },
-  { name: "Machine Learning", icon: <BrainCircuit className="w-5 h-5" />, category: "AI", level: 75 },
-  { name: "Data Visualization", icon: <PieChart className="w-5 h-5" />, category: "Analytics", level: 85 },
-  { name: "TypeScript", icon: <Code2 className="w-5 h-5" />, category: "Frontend", level: 82 },
+  { name: "React", icon: <Code2 className="w-5 h-5" />, category: "Frontend", level: 92 },
+  { name: "TypeScript", icon: <Code2 className="w-5 h-5" />, category: "Frontend", level: 90 },
+  { name: "Tailwind CSS", icon: <MonitorSmartphone className="w-5 h-5" />, category: "Frontend", level: 92 },
+  { name: "Node.js", icon: <Terminal className="w-5 h-5" />, category: "Backend", level: 90 },
+  { name: "Express.js", icon: <Globe className="w-5 h-5" />, category: "Backend", level: 88 },
+  { name: "Python", icon: <Terminal className="w-5 h-5" />, category: "Programming", level: 95 },
+  { name: "SQL", icon: <Database className="w-5 h-5" />, category: "Database", level: 90 },
+  { name: "Prisma", icon: <Database className="w-5 h-5" />, category: "Database", level: 85 },
+  { name: "OpenRouter API", icon: <BrainCircuit className="w-5 h-5" />, category: "AI", level: 92 },
+  { name: "Machine Learning", icon: <BrainCircuit className="w-5 h-5" />, category: "AI", level: 88 }
 ];
 
 const projects = [
   {
+    title: "Promptora - AI Gateway Platform",
+    description:
+      "A production-ready AI Gateway Platform that allows users to access multiple AI models from one dashboard. Built with secure authentication, API management, intelligent routing, usage tracking, and a modern developer experience.",
+    tech: [
+      "React",
+      "TypeScript",
+      "Node.js",
+      "Express",
+      "OpenRouter",
+      "Prisma",
+      "SQLite",
+      "Tailwind CSS"
+    ],
+    icon: <Sparkles className="w-6 h-6" />,
+    color: "cyan"
+  },
+
+  {
+    title: "Nemon AI Assistant",
+    description:
+      "An intelligent AI assistant featuring conversational AI, secure authentication, chat history, prompt management, responsive UI, and scalable backend architecture for future SaaS deployment.",
+    tech: [
+      "React",
+      "TypeScript",
+      "Node.js",
+      "Express",
+      "OpenRouter",
+      "Clerk",
+      "Tailwind CSS",
+      "Vercel"
+    ],
+    icon: <Bot className="w-6 h-6" />,
+    color: "purple"
+  },
+
+  {
     title: "OTT Movie Discovery Platform",
-    description: "A comprehensive movie and series discovery system leveraging Python and MySQL to manage entertainment data at scale.",
-    tech: ["Python", "MySQL", "API Integration"],
+    description:
+      "Movie and TV discovery platform that gathers entertainment data using APIs and automation, stores it in MySQL, and provides advanced search and filtering capabilities.",
+    tech: [
+      "Python",
+      "MySQL",
+      "REST API",
+      "Selenium"
+    ],
     icon: <MonitorSmartphone className="w-6 h-6" />,
     color: "blue"
   },
+
   {
     title: "AI Resume Analyzer",
-    description: "Intelligent career tool that parses PDF resumes using NLP to provide scoring and job matching recommendations.",
-    tech: ["Python", "NLP", "Streamlit"],
+    description:
+      "ATS resume analysis platform that evaluates resumes using NLP, extracts important information, calculates resume scores, and recommends improvements.",
+    tech: [
+      "Python",
+      "NLP",
+      "Streamlit",
+      "PDF Processing"
+    ],
     icon: <Search className="w-6 h-6" />,
-    color: "cyan"
-  },
-  {
-    title: "Data Analytics Dashboard",
-    description: "Dynamic business intelligence platform visualizing KPIs and trends from complex enterprise datasets.",
-    tech: ["Power BI", "Python", "SQL"],
-    icon: <BarChart3 className="w-6 h-6" />,
-    color: "indigo"
-  },
-  {
-    title: "Automation Web Scraper",
-    description: "High-performance Selenium-based crawler designed to extract and structure data from dynamic web sources.",
-    tech: ["Selenium", "Python", "Automation"],
-    icon: <Layers className="w-6 h-6" />,
     color: "emerald"
   },
+
   {
-    title: "Movie Recommendation System",
-    description: "Content-based filtering engine built with Scikit-learn to suggest personalized content to users.",
-    tech: ["Scikit-learn", "Pandas", "Analytics"],
-    icon: <Bot className="w-6 h-6" />,
-    color: "purple"
+    title: "Automation Testing Framework",
+    description:
+      "Enterprise automation testing framework using Selenium and Python with reusable test architecture, reporting, and cross-browser automation.",
+    tech: [
+      "Python",
+      "Selenium",
+      "PyTest",
+      "Automation"
+    ],
+    icon: <Layers className="w-6 h-6" />,
+    color: "indigo"
+  },
+
+  {
+    title: "Data Analytics Dashboard",
+    description:
+      "Interactive business intelligence dashboard visualizing KPIs, trends, and insights from enterprise datasets.",
+    tech: [
+      "Power BI",
+      "Python",
+      "SQL"
+    ],
+    icon: <BarChart3 className="w-6 h-6" />,
+    color: "cyan"
   }
 ];
 

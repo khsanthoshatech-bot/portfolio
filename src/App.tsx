@@ -56,7 +56,7 @@ const projects = [
     tech: [
       "React",
       "TypeScript",
-      "Node.js",
+      "Node.js", 
       "Express",
       "OpenRouter",
       "Prisma",
